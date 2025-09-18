@@ -39,10 +39,10 @@
 #define UART_PINS_PORT_DISABLE()     __HAL_RCC_GPIOA_CLK_DISABLE()
 
 #define UART_TX_PORT                 GPIOA
-#define UART_TX_PIN                  GPIO_PIN_2
+#define UART_TX_PIN                  GPIO_PIN_9
 
 #define UART_RX_PORT                 GPIOA
-#define UART_RX_PIN                  GPIO_PIN_3
+#define UART_RX_PIN                  GPIO_PIN_10
 
 #define UART_CTS_PORT                GPIOA
 #define UART_CTS_PIN                 GPIO_PIN_0
