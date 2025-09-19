@@ -56,13 +56,13 @@ COMPILER_ASSERT(DAPLINK_HIC_ID == DAPLINK_HIC_ID_STM32F103XB);
 #define SWCLK_TCK_PIN                GPIO_PIN_4
 #define SWCLK_TCK_PIN_Bit            4
 
-#define SWDIO_OUT_PIN_PORT           GPIOB
-#define SWDIO_OUT_PIN                GPIO_PIN_13
-#define SWDIO_OUT_PIN_Bit            13
+#define SWDIO_OUT_PIN_PORT           GPIOA
+#define SWDIO_OUT_PIN                GPIO_PIN_2
+#define SWDIO_OUT_PIN_Bit            2
 
-#define SWDIO_IN_PIN_PORT            GPIOA
-#define SWDIO_IN_PIN                 GPIO_PIN_2
-#define SWDIO_IN_PIN_Bit             2
+#define SWDIO_IN_PIN_PORT            GPIOB
+#define SWDIO_IN_PIN                 GPIO_PIN_13
+#define SWDIO_IN_PIN_Bit             13
 
 // LEDs
 // USB status LED
