@@ -357,12 +357,12 @@ __STATIC_FORCEINLINE void PIN_SWDIO_OUT_ENABLE(void)
 }
 
 /** SWDIO I/O pin: Switch to Input mode (used in SWD mode only).
-Configure the SWDIO DAP hardware I/O pin to input mode. This function is
-called prior \ref PIN_SWDIO_IN function calls.
+Prepare the SWDIO DAP hardware for input sampling. On this split-pin design
+the output pin stays driven high while \ref PIN_SWDIO_IN samples the dedicated
+input pin.
 */
 __STATIC_FORCEINLINE void PIN_SWDIO_OUT_DISABLE(void)
 {
-    pin_in_init(SWDIO_OUT_PIN_PORT, SWDIO_OUT_PIN_Bit, 0);
     SWDIO_OUT_PIN_PORT->BSRR = SWDIO_OUT_PIN;
 }
 
